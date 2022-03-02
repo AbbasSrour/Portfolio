@@ -1,0 +1,164 @@
+:root {
+  /* basics */
+  --background: #24283b;
+  --foreground: #c0caf5;
+  --selection_background: #364a82;
+  --selection_foreground: #c0caf5;
+  --url_color: #73daca;
+  --cursor: #c0caf5;
+
+  /* Tabs */
+  --active_tab_background: #7aa2f7;
+  --active_tab_foreground: #1f2335;
+  --inactive_tab_background: #292e42;
+  --inactive_tab_foreground: #545c7e;
+  --tab_bar_background: #1d202f;
+
+  /* normal */
+  --color0: #1d202f;
+  --color1: #f7768e;
+  --color2: #9ece6a;
+  --color3: #e0af68;
+  --color4: #7aa2f7;
+  --color4t: #3b4261;
+  --color5: #bb9af7;
+  --color6: #7dcfff;
+  --color7: #a9b1d6;
+
+  /* bright */
+  --color8: #414868;
+  --color9: #f7768e;
+  --color10: #9ece6a;
+  --color11: #e0af68;
+  --color12: #7aa2f7;
+  --color13: #bb9af7;
+  --color14: #7dcfff;
+  --color15: #c0caf5;
+
+  /* extended colors */
+  --color16: #ff9e64;
+  --color17: #db4b4b;
+  --color18: #46c681;
+}
+
+@font-face {
+  font-family: "JetBrainsRegular";
+  src: url("../fonts/JetBrains/JetBrainsMonoRegularNerd.ttf") format("truetype");
+  /* font-weight: regular; */
+}
+
+@font-face {
+  font-family: "JetBrainsItalic";
+  src: url("../fonts/JetBrains/JetBrainsMonoRegularItalicNerd.ttf")
+    format("truetype");
+  /* font-style: italic; */
+}
+
+@font-face {
+  font-family: "JetBrainsBold";
+  src: url("../fonts/JetBrains/JetBrainsMonoBoldNerd.ttf") format("truetype");
+  /* font-weight: bold; */
+}
+
+@font-face {
+  font-family: "JetBrainsExtraBold";
+  src: url("../fonts/JetBrains/JetBrainsMonoExtraBoldNerd.ttf")
+    format("truetype");
+  /* font-weight: extraBold; */
+}
+
+@font-face {
+  font-family: "Segoe";
+  src: url("../fonts/Segoe/Segoe-UI-Variable-Static-Display.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Segoe";
+  src: url("../fonts/Segoe/Segoe-UI-Variable-Static-Display-Bold.ttf")
+    format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "VictorMono";
+  src: url("../fonts/VictorMono/VictorMonoItalic.ttf") format("truetype");
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.OS {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 93% 7%;
+  background-image: url("../media/win11.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+}
+
+.Desktop {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 7.3px;
+  }
+}
+
+@media (min-width: 1280px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 1440px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1920px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 2560px) {
+  html {
+    font-size: 19.5px;
+  }
+}
+
+@media (min-width: 3840px) {
+  html {
+    font-size: 29px;
+  }
+}

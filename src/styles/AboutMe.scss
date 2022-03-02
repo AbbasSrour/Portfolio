@@ -1,0 +1,191 @@
+#meSection {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 5rem;
+  overflow-x: hidden;
+  .aboutMeLeft {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin-top: 2rem;
+    .aboutMeHeader {
+      h2 {
+    padding-left: 2rem;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        font-size: 3rem;
+        color: #7aa2f7;
+      }
+    }
+    .aboutMeText {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      font-size: 1.3rem;
+      z-index: 5;
+      color: #bb9af7;
+      width: 80%;
+    padding-left: 2rem;
+    }
+    .myIntrests {
+      display: flex;
+      z-index: 5;
+    }
+
+    .intrests {
+      color: #7aa2f7;
+      font-size: 1.3rem;
+    }
+
+    .MeAnimations {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: -20%;
+      z-index: 3;
+    }
+  }
+
+  #pClose {
+    top: 84%;
+    /* left: 3%; */
+  }
+
+  .aboutMeRight {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    .innerCircle {
+      position: relative;
+      margin-top: 6rem;
+      width: 8rem;
+      height: 8rem;
+      border-radius: 50%;
+      z-index: 25;
+      box-shadow: 0.6rem 0.6rem 1rem -0.1rem rgba(0, 0, 0, 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .myImage {
+        z-index: 26;
+        background-image: url("../media/Portrait.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+    }
+    .outerCircle {
+      width: 17rem;
+      height: 17rem;
+      position: absolute;
+      border-radius: 50%;
+      z-index: 24;
+      border: 0.2rem solid var(--color18);
+      margin-top: 6rem;
+      background-color: var(--background);
+      box-shadow: 0.6rem 0.6rem 1rem -0.1rem rgba(0, 0, 0, 0.7),
+        -0.6rem -0.6rem 1rem -0.1rem rgba(0, 0, 0, 0.3);
+    }
+    .rotateIcon {
+      width: 3rem;
+      height: 3rem;
+      background-color: var(--tab_bar_background);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      border-radius: 50%;
+      box-shadow: 0.6rem 0.6rem 1rem -0.1rem rgba(0, 0, 0, 0.7);
+      svg {
+        width: 70%;
+        height: 70%;
+        color: var(--color5);
+      }
+    }
+    #icon0 {
+      top: -9%;
+      left: 38%;
+    }
+    #icon1 {
+      top: 41%;
+      left: -9%;
+    }
+    #icon2 {
+      top: 41%;
+      left: 90%;
+    }
+    #icon3 {
+      top: 90%;
+      left: 38%;
+    }
+  }
+  .htmltags {
+    font-family: VictorMono;
+    font-size: 1.5rem;
+    position: absolute;
+    color: var(--color8);
+  }
+  #h2Open {
+    top: 19%;
+    /* left: 3%; */
+  }
+
+  #h2Close {
+    top: 30%;
+    /* left: 3%; */
+  }
+
+  #pOpen {
+    top: 35%;
+    /* left: 3%; */
+  }
+
+  #pClose {
+    top: 84%;
+    /* left: 3%; */
+  }
+}
+
+@media (min-width: 1024px) {
+  #meSection {
+    margin-top: 10rem;
+    grid-template-columns: 50% 50%;
+    overflow:visible;
+    .aboutMeLeft {
+      .aboutMeHeader {
+        h2 {
+          padding-left: 4rem;
+        }
+      }
+      .aboutMeText {
+        font-size: 1.4rem;
+        padding-left: 4rem;
+      }
+    }
+
+    .aboutMeRight {
+    overflow:visible;
+      .innerCircle {
+        width: 15rem;
+        height: 15rem;
+      }
+      .outerCircle {
+        width: 23rem;
+        height: 23rem;
+      }
+      .rotateIcon {
+        width: 4rem;
+        height: 4rem;
+      }
+    }
+  }
+}

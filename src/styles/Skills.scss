@@ -1,0 +1,240 @@
+#SkillsSection {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  margin-top: 5rem;
+  grid-template-rows: 40% 60%;
+  height: 150vh;
+  overflow: hidden;
+  .htmltags {
+    font-family: VictorMono;
+    font-size: 1.5rem;
+    position: absolute;
+    color: var(--color8);
+  }
+  #h2Open {
+    top: 22%;
+    /* left: 3%; */
+  }
+  #h2Close {
+    top: 34%;
+    /* left: 3%; */
+  }
+  #pOpen {
+    top: 40%;
+    /* left: 3%; */
+  }
+  #pClose {
+    top: 82%;
+    /* left: 3%; */
+  }
+  .leftSection {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    text-justify: inter-word;
+    .mySkillsHeader {
+      h2 {
+        font-family: "Open Sans", sans-serif;
+        padding-left: 2rem;
+        font-weight: 600;
+        font-size: 3rem;
+        color: var(--color9);
+      }
+    }
+    .mySkillsText {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 500;
+      padding-left: 2rem;
+      font-size: 1.5rem;
+      z-index: 5;
+      width: 100%;
+      color: var(--color1);
+    }
+  }
+  .rightSection {
+    width: 100%;
+    height: 150%;
+    position: relative;
+    overflow: hidden;
+    .SliderButton {
+      outline: none;
+      position: absolute;
+      top: 10%;
+      left: 15%;
+      width: 1.5rem;
+      height: 1.5rem;
+      transform: scale(5);
+      border-radius: 50%;
+      border: 0.1rem solid var(--color5);
+      background-color: var(--tab_bar_background);
+      box-shadow: 0.6rem 0.6rem 1rem -0.1rem rgba(0, 0, 0, 0.7);
+      font-size: 0.3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      color: var(--color8);
+      span {
+        text-align: center;
+        text-justify: center;
+      }
+    }
+    .SliderButton:hover span {
+      display: none;
+    }
+    .SliderButton:hover {
+      transition: 0.5s all ease-in;
+      box-shadow: 0.6rem 0.6rem 1rem -0.1rem rgba(0, 0, 0, 0.7);
+      /* inset 140px 0 0 0 var(--color5); */
+      transform: scale(7);
+    }
+    .SliderButton:hover:before {
+      transition: 0.5s all;
+      content: "Rotate";
+    }
+    .Slider {
+      position: absolute;
+      left: 65%;
+      top: 20%;
+      transform: translateY(-50%);
+      width: 27rem;
+      height: 27rem;
+      border-radius: 50%;
+      background-clip: lef;
+      box-shadow: 0.6rem 0.6rem 1rem -0.1rem rgba(0, 0, 0, 0.7),
+        -0.6rem -0.6rem 1rem -0.1rem rgba(0, 0, 0, 0.7);
+      border: 0.1rem solid var(--color5);
+      .item {
+        position: absolute;
+        width: 1.7rem;
+        height: 1.7rem;
+        border-radius: 50%;
+        background-color: var(--tab_bar_background);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0.6rem 0.6rem 1rem -0.1rem rgba(0, 0, 0, 1);
+        border: 0.1rem solid var(--color5);
+      }
+      #item0 {
+        top: 15%;
+        left: 7.5%;
+        #item0Icon {
+          transform: scale(0);
+          width: 60%;
+          height: 60%;
+        }
+      }
+      #item1 {
+        top: 50%;
+        left: -3%;
+        transform: scale(3);
+        #item1Icon {
+          width: 60%;
+          height: 60%;
+        }
+      }
+      #item2 {
+        top: 85%;
+        left: 14%;
+        #item2Icon {
+          transform: scale(0);
+          width: 60%;
+          height: 60%;
+        }
+      }
+
+      #item3 {
+        top: 97%;
+        left: 47%;
+        #item3Icon {
+          transform: scale(0);
+          width: 60%;
+          height: 60%;
+        }
+      }
+      #item4 {
+        top: 85%;
+        left: 79%;
+        #item4Icon {
+          transform: scale(0);
+          width: 60%;
+          height: 60%;
+        }
+      }
+      #item5 {
+        top: 50%;
+        left: 97%;
+        #item5Icon {
+          transform: scale(0);
+          width: 60%;
+          height: 60%;
+        }
+      }
+      #item6 {
+        top: 15%;
+        left: 86%;
+        #item6Icon {
+          transform: scale(0);
+          width: 60%;
+          height: 60%;
+        }
+      }
+      #item7 {
+        top: -3%;
+        left: 47%;
+        #item7Icon {
+          transform: scale(0);
+          width: 60%;
+          height: 60%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+  #SkillsSection {
+    height: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    align-items: flex-start;
+    justify-content: top;
+    margin-top: 0rem;
+    .leftSection {
+      width: 100%;
+      height: 100%;
+      .mySkillsHeader {
+        h2 {
+          padding-left: 4rem;
+        }
+      }
+      .mySkillsText {
+        padding-left: 4rem;
+      }
+    }
+    .rightSection {
+      overflow-x: hidden;
+      width: 100%;
+      height: 100%;
+      .SliderButton {
+        top: 30%;
+        left: 40%;
+        width: 2rem;
+        height: 2rem;
+      }
+      .Slider {
+        left: 73%;
+        top: 50%;
+        width: 30rem;
+        height: 30rem;
+        .item {
+          height: 2rem;
+          width: 2rem;
+        }
+      }
+    }
+  }
+}

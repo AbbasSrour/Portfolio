@@ -1,0 +1,443 @@
+.Ide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+//######################################## Buffer  ##########################################
+.Bufferline {
+  width: 100%;
+  height: 4%;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 10;
+  background-color: var(--tab_bar_background);
+  display: grid;
+  grid-template-columns: 20% 70% 10%;
+}
+
+.bufferExplorer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 0.1rem solid var(--color5);
+  background-color: var(--inactive_tab_background);
+  font-family: JetBrains;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: var(--inactive_tab_foreground);
+}
+
+.BufferArea {
+  display: flex;
+}
+
+.Buffer {
+  width: 15%;
+  background-color: var(--inactive_tab_background);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: var(--inactive_tab_foreground);
+}
+
+.Buffer:last-of-type {
+  border-radius: 0 1rem 1rem 0;
+}
+
+.Buffer:active,
+.Buffer:hover {
+  color: var(--active_tab_foreground);
+  background-color: var(--active_tab_background);
+}
+
+.BufferDeco {
+  border-top-left-radius: 0.1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  background-color: var(--background);
+  border-radius: 1rem 0rem 0 0;
+}
+
+.decoBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.decoBox:first-of-type {
+  border-radius: 1rem 0 0 0;
+}
+
+.deco {
+  fill: var(--inactive_tab_foreground);
+  padding: 0.3rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.decoBox:hover,
+.decoBox:active {
+  background-color: var(--active_tab_background);
+  .deco {
+    fill: var(--active_tab_foreground);
+  }
+}
+
+//######################################## Explorer  ##########################################
+.Explorer {
+  position: fixed;
+  top: 4%;
+  left: 0%;
+  width: 20%;
+  height: 81%;
+  z-index: 0;
+  background-color: var(--tab_bar_background);
+  border-right: 0.1rem solid var(--color5);
+  box-sizing: border-box;
+}
+.FileEx {
+  padding-top: 1rem;
+  font-size: 1.4rem;
+  color: var(--color15);
+  fill: darkgray;
+  font-family: JetBrainsRegular;
+  .JsonIcon {
+    fill: yellow;
+    padding-left: 2rem;
+  }
+  .HtmlIcon {
+    fill: red;
+    padding-left: 2rem;
+  }
+  .JSIcon {
+    fill: yellowgreen;
+    padding-left: 2rem;
+  }
+  .FolderIcon {
+    padding-left: 1rem;
+    color: blue;
+  }
+}
+
+//######################################## IdeLine  ##########################################
+.IdeLine {
+  position: fixed;
+  top: 84%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3% 15% 2% 8% 13% 18% 15% 7% 2% 10% 2% 5%;
+  background-color: var(--tab_bar_background);
+  font-family: JetBrains;
+  z-index: 10;
+}
+
+.MainIcon {
+  font-size: 1.5rem;
+  background-color: var(--color9);
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-right-radius: 0.4rem;
+}
+
+.FileName {
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  background-color: var(--color10);
+  border-color: var(--color10);
+  border-bottom-right-radius: 0.4rem;
+}
+
+.SepTri {
+  position: relative;
+  left: -1%;
+  color: var(--color9);
+  z-index: 4;
+  font-size: 1.8rem;
+}
+
+.fnIcon {
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  color: var(--color9);
+}
+
+.fnText {
+  font-size: 1.2rem;
+  font-family: JetBrains;
+  font-weight: bold;
+  color: var(--color9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SepTri2 {
+  position: relative;
+  left: -4%;
+  display: flex;
+  align-items: center;
+  color: var(--color10);
+  z-index: 4;
+  font-size: 1.8rem;
+}
+
+.Git {
+  z-index: 4;
+  display: flex;
+  align-items: center;
+}
+
+.gitIcon {
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  color: var(--color12);
+}
+
+.gitText {
+  font-size: 1.2rem;
+  font-family: JetBrains;
+  font-weight: bold;
+  color: var(--color12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Changes {
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color4);
+}
+
+.modi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color6);
+}
+
+.del {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color3);
+}
+
+.ChangesIcon {
+  font-size: 1.5rem;
+  padding-right: 0.5rem;
+}
+
+.ChangesText {
+  font-size: 1.4rem;
+  padding-right: 0.7rem;
+}
+
+.Diagnostics {
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color3);
+}
+
+.warn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color6);
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color1);
+}
+
+.hint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color5);
+}
+
+.DiagnosticsIcon {
+  font-size: 1.5rem;
+  padding-right: 0.5rem;
+}
+
+.DiagnosticsText {
+  font-size: 1.4rem;
+  padding-right: 0.7rem;
+}
+
+.Lsp {
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.LspIcon {
+  font-size: 1.5rem;
+  padding-right: 0.7rem;
+  color: var(--color12);
+}
+
+.LspText {
+  font-size: 1.5rem;
+  font-family: JetBrains;
+  font-weight: bold;
+  color: var(--color12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SepCir1 {
+  position: relative;
+  left: 13%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: var(--color10);
+  z-index: 4;
+  font-size: 1.75rem;
+}
+
+.VimMode {
+  position: relative;
+  left: 2%;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  background-color: var(--color10);
+}
+
+.VimIcon {
+  position: relative;
+  left: 4%;
+  font-size: 1.8rem;
+  color: var(--color9);
+}
+
+.VimText {
+  font-size: 1.3rem;
+  position: relative;
+  left: 20%;
+  font-family: JetBrains;
+  color: var(--color9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SepCir2 {
+  position: relative;
+  left: 2%;
+  display: flex;
+  background-color: var(--color10);
+  justify-content: flex-end;
+  align-items: center;
+  color: var(--color9);
+  z-index: 4;
+  font-size: 1.75rem;
+}
+
+.Position {
+  background-color: var(--color9);
+  z-index: 4;
+  display: flex;
+  align-items: center;
+}
+
+.PosIcon {
+  font-size: 1.5rem;
+  color: var(--tab_bar_background);
+}
+
+.PosText {
+  font-size: 1.5rem;
+  padding-left: 0.7rem;
+  font-family: JetBrains;
+  font-weight: bold;
+  color: var(--tab_bar_background);
+}
+
+.bottomEmptySpace {
+  position: fixed;
+  width: 100%;
+  height: 6%;
+  bottom: 7%;
+  background-color: var(--background);
+}
+
+//######################################## CodeArea ##########################################
+.CodeArea {
+  position: fixed;
+  left: 20%;
+  top: 4%;
+  width: 82%;
+  height: 81%;
+  background-color: var(--background);
+  overflow-y: auto;
+}
+
+.IdeSection {
+  position: relative;
+  /* margin-left: 1rem; */
+  height: 100%;
+  width: 100%;
+  color: white;
+  /* z-index: 5; */
+  font-family: JetBrainsRegular;
+  /* overflow: hidden; */
+}
+
+//######################################## Mobile  ##########################################
+@media (max-width: 1024px) {
+  .IdeLine {
+    display: none;
+  }
+  .bottomEmptySpace {
+    display: none;
+  }
+  .Bufferline {
+    display: none;
+  }
+  .Explorer {
+    display: none;
+  }
+  .CodeArea {
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    width: 100vw;
+    height: 93vh;
+    background-color: var(--background);
+  }
+}

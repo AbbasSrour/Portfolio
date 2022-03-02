@@ -1,0 +1,143 @@
+.Loader {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1000;
+}
+// BootLoader
+
+.BootLoader {
+  position: absolute;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-rows: 70% 30%;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+}
+
+.WinBIcon {
+  position: relative;
+  display: flex;
+  top: -5%;
+  justify-content: center;
+  align-content: center;
+  height: 15rem;
+  width: 15rem;
+}
+
+.spinnerContainer {
+  position: relative;
+  left: 5%;
+  display: flex;
+  align-self: start;
+  justify-self: center;
+}
+
+.Spinner {
+  display: flex;
+  align-self: start;
+  justify-self: center;
+  height: 1rem;
+  width: 1rem;
+}
+
+// LockScreen
+
+.LockScreen {
+  position: absolute;
+  z-index: 7;
+  background-image: url("../media/LockScreenWallpaper.jpg");
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  font-family: Segoe;
+}
+
+#time {
+  padding-top: 9rem;
+  font-size: 7rem;
+  color: white;
+  font-weight: bold;
+}
+#date {
+  font-size: 2rem;
+  color: white;
+}
+
+.LoginScreen {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.LoginScreenWallpaper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url("../media/LockScreenWallpaper.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  z-index: 1;
+}
+
+.userPhoto {
+  height: 17rem;
+  width: 17rem;
+  z-index: 2;
+  border-radius: 50%;
+  margin-top: 12rem;
+}
+
+.userName {
+  font-size: 3rem;
+  font-family: Segoe;
+  font-weight: bold;
+  color: white;
+  margin-top: 1rem;
+  z-index: 2;
+}
+
+.passwordBox {
+  margin-top: 1.2rem;
+  display: flex;
+  align-items: center;
+  width: 23rem;
+  height: 2rem;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  border: 0.2rem solid rgba(255, 255, 255, 0.5);
+  border-bottom: 0.5rem solid rgba(255, 255, 255, 0.5);
+  border-radius: 0.5rem;
+}
+
+.password {
+  font-family: JetBrains;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 0.3rem;
+  color: white;
+  padding-left: 0.8rem;
+}
+.arrow {
+  position: absolute;
+  left: 90%;
+  fill: white;
+  width: 1.7rem;
+  height: 1.7rem;
+}

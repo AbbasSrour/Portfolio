@@ -1,0 +1,355 @@
+#ContactSection {
+  display: grid;
+  grid-template-rows: 45% 55%;
+  height: 130vh;
+  .htmltags {
+    font-family: VictorMono;
+    font-size: 1.5rem;
+    position: absolute;
+    color: var(--color8);
+  }
+  #h2Open {
+    top: 11%;
+    left: 0%;
+  }
+  #h2Close {
+    top: 23%;
+    left: 0%;
+  }
+  #pOpen {
+    top: 28%;
+    left: 0%;
+  }
+  #pClose {
+    top: 56%;
+    left: 0%;
+  }
+  #formOpen {
+    top: 19%;
+    /* left: 3%; */
+  }
+  #formClose {
+    top: 94%;
+    /* left: 3%; */
+  }
+  .seperator {
+    position: absolute;
+    top: 50%;
+    width: 90%;
+    left: 5%;
+    box-shadow: 0.6rem 0.6rem 1rem -0.1rem rgba(0, 0, 0, 0.7),
+      -0.6rem 0.6rem 1rem -0.1rem rgba(0, 0, 0, 0.7);
+    height: 0.3rem;
+    border-bottom: 0.1rem solid var(--color5);
+  }
+  .leftSection {
+    display: grid;
+    grid-template-rows: 20% 30% 50%;
+    justify-content: center;
+    align-content: center;
+    /* box-sizing: border-box; */
+    position: relative;
+    .contactHeader {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 700;
+      font-size: 3rem;
+      color: var(--color9);
+      margin-left: 2rem;
+      align-self: center;
+    }
+    .contactText {
+      margin-left: 2rem;
+      width: 70%;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.5rem;
+      z-index: 5;
+      color: var(--color1);
+      text-justify: inter-word;
+      box-sizing: border-box;
+      align-self: center;
+    }
+    .dets {
+      .detsIconContainer {
+        position: absolute;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        background-color: var(--tab_bar_background);
+        box-shadow: -0.3rem 0.6rem 1rem -0.1rem rgba(0, 0, 0, 1);
+        z-index: 10;
+        background-color: var(--background);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+          width: 70%;
+          height: 70%;
+        }
+      }
+      .detsContainer {
+        position: absolute;
+        height: 2.5rem;
+        border-radius: 2rem;
+        background-color: var(--tab_bar_background);
+        box-shadow: -0.3rem 0.6rem 1rem -0.1rem rgba(0, 0, 0, 0.7);
+        font-family: "Open Sans", sans-serif;
+        font-size: 1rem;
+        display: flex;
+        align-content: center;
+        span {
+          text-align: center;
+          height: 100%;
+          text-align: center;
+          color: var(--color1);
+          padding-left: 4rem;
+          padding-top: 0.7rem;
+        }
+      }
+      #detsIconContainer1 {
+        top: 49%;
+        left: 5%;
+        svg {
+          fill: var(--color2);
+        }
+      }
+      #detsContainer1 {
+        width: 13rem;
+        top: 49.5%;
+        left: 5%;
+      }
+      #detsIconContainer2 {
+        top: 61%;
+        left: 5%;
+        svg {
+          fill: var(--color1);
+        }
+      }
+      #detsContainer2 {
+        width: 17rem;
+        top: 61.5%;
+        left: 5%;
+      }
+      #detsIconContainer3 {
+        top: 73%;
+        left: 5%;
+        svg {
+          fill: var(--color3);
+        }
+      }
+      #detsContainer3 {
+        top: 73.5%;
+        left: 5%;
+        width: 21rem;
+      }
+      #cvButtonIcon {
+        top: 87%;
+        left: 5%;
+      }
+      #cvButtonIcon2 {
+        top: 86.5%;
+        left: 26rem;
+      }
+      #cvButton {
+        top: 87.7%;
+        left: 5%;
+        width: 26rem;
+        border: 0rem solid black;
+        font-size: 1.5rem;
+        text-align: center;
+        justify-content: center;
+        color: var(--color1);
+        padding-top: 0.5rem;
+        outline: none;
+      }
+    }
+  }
+}
+.rightSection {
+  display: flex;
+  justify-self: center;
+  height: 100%;
+  width: 85%;
+  padding-top: 7rem;
+  ::placeholder {
+    color: var(--color8);
+  }
+  .contactForm {
+    font-family: "Open Sans", sans-serif;
+    display: grid;
+    grid-template-rows: 12.5% 12.5% 12.5% 50% 12.5%;
+    height: 70%;
+    width: 100%;
+    gap: 1rem;
+    color: var(--color1);
+    .nameEmail {
+      display: flex;
+      column-gap: 1rem;
+    }
+    #senderName {
+      width: 95%;
+      height: 100%;
+      background-color: var(--tab_bar_background);
+      border-radius: 1rem;
+      border-width: 0;
+      box-shadow: 0.6rem 0.6rem 1rem -0.1rem rgba(0, 0, 0, 0.2);
+      outline: none;
+      color: var(--color1);
+      padding-left: 1.2rem;
+      box-sizing: border-box;
+    }
+    #senderEmail {
+      width: 95%;
+      height: 100%;
+      background-color: var(--tab_bar_background);
+      border-radius: 1rem;
+      border-width: 0;
+      box-shadow: 0.6rem 0.6rem 1rem -0.1rem rgba(0, 0, 0, 0.2);
+      outline: none;
+      color: var(--color1);
+      padding-left: 1.2rem;
+      box-sizing: border-box;
+    }
+    #senderSubject {
+      width: 95%;
+      height: 100%;
+      background-color: var(--tab_bar_background);
+      border-radius: 1.1rem;
+      border-width: 0;
+      box-shadow: 0.6rem 0.6rem 1rem -0.1rem rgba(0, 0, 0, 0.2);
+      outline: none;
+      color: var(--color1);
+      padding-left: 1.2rem;
+      box-sizing: border-box;
+    }
+    #senderMessege {
+      width: 95%;
+      height: 100%;
+      background-color: var(--tab_bar_background);
+      border-radius: 1rem;
+      border-width: 0;
+      box-shadow: 0.6rem 0.6rem 1rem -0.1rem rgba(0, 0, 0, 0.2);
+      outline: none;
+      color: var(--color1);
+      padding-left: 1.2rem;
+      padding-top: 1.2rem;
+      box-sizing: border-box;
+      resize: none;
+    }
+    .submitButton {
+      align-self: center;
+      justify-self: end;
+      margin-right: 1rem;
+      width: 45%;
+      height: 100%;
+      background-color: var(--tab_bar_background);
+      color: var(--color8);
+      font-size: 1.5rem;
+      border-radius: 1rem;
+      border-width: 0;
+      box-shadow: 0.6rem 0.6rem 1rem -0.1rem rgba(0, 0, 0, 0.2);
+      outline: none;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+  #ContactSection {
+    height: 70vh;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 100%;
+    .seperator {
+      top: 20%;
+      left: 40%;
+      width: 0.3rem;
+      height: 60%;
+      border-left: 0.1rem solid var(--color5);
+      border-bottom: 0rem solid var(--color5);
+    }
+    .leftSection {
+      grid-template-rows: 15% 20% 65%;
+      margin-top: 3rem;
+      .dets {
+        position: relative;
+        .detsIconContainer {
+          width: 4rem;
+          height: 4rem;
+        }
+        .detsContainer {
+          height: 3rem;
+          font-size: 1.2rem;
+          span {
+            padding-left: 5rem;
+          }
+        }
+        #detsIconContainer1 {
+          top: 1%;
+          left: 5%;
+        }
+        #detsContainer1 {
+          width: 17rem;
+          top: calc(1% + 0.5rem);
+          left: 5%;
+        }
+        #detsIconContainer2 {
+          top: 21%;
+          left: 5%;
+        }
+        #detsContainer2 {
+          width: 22rem;
+          top: calc(21% + 0.5rem);
+          left: 5%;
+        }
+        #detsIconContainer3 {
+          top: 41%;
+          left: 5%;
+        }
+        #detsContainer3 {
+          top: calc(41% + 0.5rem);
+          left: 5%;
+          width: 27rem;
+        }
+        #cvButtonIcon {
+          top: 61%;
+          left: 5%;
+        }
+        #cvButtonIcon2 {
+          top: 61%;
+          left: 30rem;
+        }
+        #cvButton {
+          top: calc(61% + 0.5rem);
+          left: 5%;
+          width: 30rem;
+        }
+      }
+    }
+    .rightSection {
+      .contactForm {
+        display: grid;
+        grid-template-rows: 12.5% 12.5% 50% 12.5%;
+        height: 95%;
+        .nameEmail {
+          display: grid;
+          grid-template-columns: 38% 57.5%;
+        }
+        #senderName {
+          font-size: 1.5rem;
+        }
+        #senderEmail {
+          font-size: 1.5rem;
+        }
+        #senderSubject {
+          font-size: 1.5rem;
+        }
+        #senderMessege {
+          font-size: 1.5rem;
+        }
+        .submitButton {
+          justify-self: end;
+          margin-right: 2.5rem;
+        }
+      }
+    }
+  }
+}
