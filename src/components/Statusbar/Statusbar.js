@@ -8,7 +8,7 @@ import { BsLinkedin as Linkedin } from "react-icons/bs";
 // import { BsReddit as Reddit } from "react-icons/bs";
 import { ReactComponent as Win11 } from "../../media/WindowsIcon.svg";
 import { ReactComponent as IdeIcon } from "../../media/neovim-icon.svg";
-import { SiWindowsterminal as TermianlIcon } from "react-icons/si";
+// import { SiWindowsterminal as TermianlIcon } from "react-icons/si";
 
 function Statusbar() {
   const [width, setWidth] = React.useState(window.innerWidth);

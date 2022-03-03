@@ -10,23 +10,28 @@ import Skills from "./components/Sections/Skills.js";
 import Contact from "./components/Sections/Contact.js";
 
 function App() {
+  const HomeRef = React.useRef(null);
+  const AboutRef = React.useRef(null);
+  const SkillsRef = React.useRef(null);
+  const ContactRef = React.useRef(null);
+
   return (
     <div className="App">
       <div className="Desktop">
         <div className="Ide">
           <Bufferline>
-            <Buffer name="Profilo" id="Home" />
-            <Buffer name="About Me" id="AboutMe" />
-            <Buffer name="My Skills" id="Skills" />
-            <Buffer name="Contact Me" id="Contact" />
+            <Buffer name="Profilo" id="Home" link={HomeRef} />
+            <Buffer name="About Me" id="AboutMe" link={AboutRef} />
+            <Buffer name="My Skills" id="Skills" link={SkillsRef} />
+            <Buffer name="Contact Me" id="Contact" link={ContactRef} />
           </Bufferline>
           <div className="MidSection">
             <IdeExplorer />
             <div className="CodeArea">
-              <Header />
-              <AboutMe />
-              <Skills />
-              <Contact />
+              <Header ref={HomeRef} />
+              <AboutMe ref={AboutRef} />
+              <Skills ref={SkillsRef} />
+              <Contact ref={ContactRef} />
             </div>
           </div>
           <IdeLine

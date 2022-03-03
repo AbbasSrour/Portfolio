@@ -27,7 +27,17 @@ const Bufferline = (props) => {
 };
 
 export function Buffer(props) {
-  return <div className="Buffer">{props.name}</div>;
+  const excuteScroll = (ref) => {
+    ref.current.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+  return (
+    <div className="Buffer" onClick={() => excuteScroll(props.link)}>
+      {props.name}
+    </div>
+  );
 }
 
 export default Bufferline;

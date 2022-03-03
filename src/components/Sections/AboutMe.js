@@ -9,7 +9,7 @@ import { gsap } from "gsap";
 import BackgroundAnimation from "../HelperFunctions/svgAnimation.js";
 import { getAge } from "../HelperFunctions/HelperFunctions";
 
-const AboutMe = () => {
+const AboutMe = React.forwardRef((props, ref) => {
   const [pos, setPos] = React.useState(0);
   const rotate = () => {
     setPos(pos + 45);
@@ -28,7 +28,7 @@ const AboutMe = () => {
   });
 
   return (
-    <section className="IdeSection" id="meSection">
+    <section className="IdeSection" id="meSection" ref={ref}>
       {/* <span className="htmltags" id="h2Open"> */}
       {/*   {"<h2>"} */}
       {/* </span> */}
@@ -111,6 +111,6 @@ const AboutMe = () => {
       </div>
     </section>
   );
-};
+});
 
 export default AboutMe;

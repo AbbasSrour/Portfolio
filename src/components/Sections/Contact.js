@@ -8,7 +8,7 @@ import { ReactComponent as Resume } from "../../media/resume.svg";
 const FORM_ENDPOINT =
   "https://public.herotofu.com/v1/4d787b90-8da3-11ec-8462-6960be7ce578";
 
-const Contact = () => {
+const Contact = React.forwardRef((props, ref) => {
   const [width, setWidth] = React.useState(window.innerWidth);
   function handleWindowSizeChange() {
     setWidth(window.innerWidth);
@@ -88,7 +88,7 @@ const Contact = () => {
   }
 
   return (
-    <section className="IdeSection" id="ContactSection">
+    <section className="IdeSection" id="ContactSection" ref={ref}>
       {/* <span className="htmltags" id="h2Open"> */}
       {/*   {"<h2>"} */}
       {/* </span> */}
@@ -140,8 +140,8 @@ const Contact = () => {
             type="link"
             id="cvButton"
             className="detsContainer"
-            href="../assets/Resume/Resume.pdf"
-            download="Resume.pdf"
+            href="../../media/AbbasSrour.pdf"
+            download="AbbasSrour.pdf"
           >
             Download CV!
           </button>
@@ -220,5 +220,5 @@ const Contact = () => {
       </div>
     </section>
   );
-};
+});
 export default Contact;

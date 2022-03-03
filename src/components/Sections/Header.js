@@ -3,7 +3,7 @@ import "../../styles/Header.scss";
 import Typewriter from "typewriter-effect";
 import Particles from "react-tsparticles";
 
-const Header = () => {
+const Header = React.forwardRef((props, ref) => {
   const particlesInit = (main) => {
     console.log(main);
   };
@@ -11,7 +11,7 @@ const Header = () => {
     console.log(IdeSection);
   };
   return (
-    <section className="IdeSection" id="HeaderSection">
+    <section className="IdeSection" id="HeaderSection" ref={ref}>
       {/* <span className="htmltags" id="htmlOpen"> */}
       {/*   {"<html>"} */}
       {/* </span> */}
@@ -134,5 +134,5 @@ const Header = () => {
       />
     </section>
   );
-}
+});
 export default Header;
