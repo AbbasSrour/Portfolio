@@ -34,9 +34,9 @@ export function Buffer(props) {
     });
   };
   return (
-    <div className="Buffer" onClick={() => excuteScroll(props.link)}>
+    <button className="Buffer" onClick={() => excuteScroll(props.link)}>
       {props.name}
-    </div>
+    </button>
   );
 }
 
