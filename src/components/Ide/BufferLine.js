@@ -28,15 +28,16 @@ const Bufferline = (props) => {
 
 export function Buffer(props) {
   const excuteScroll = (ref) => {
+    console.log("hello world!");
     ref.current.scrollIntoView({
       behavior: "smooth",
       block: "start",
     });
   };
   return (
-    <button className="Buffer" onClick={() => excuteScroll(props.link)}>
+    <div className="Buffer" onClick={() => excuteScroll(props.link)}>
       {props.name}
-    </button>
+    </div>
   );
 }
 
